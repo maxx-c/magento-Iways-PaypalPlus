@@ -1,0 +1,15 @@
+{
+  "name": "iways/paypal-plus",
+  "type": "magento-module",
+  "description": "PayPal PLUS is a solution where PayPal offers PayPal, Credit Card and ELV (pay upon invoice will be added in a later phase) as individual payment options on the payment selection page.",
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "authors": [
+    {
+      "name": "i-ways sales solutions GmbH",
+      "email": "magento@i-ways.de",
+      "role": "Author/Maintainer"
+    }
+  ]
+}
