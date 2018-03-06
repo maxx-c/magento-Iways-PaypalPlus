@@ -607,6 +607,12 @@ class Iways_PayPalPlus_Model_Api
         if($quote->getBaseGiftCardsAmountUsed()) {
             $details->setShippingDiscount(-$quote->getBaseGiftCardsAmountUsed() - $details->getShippingDiscount());
         }
+
+        Mage::dispatchEvent('paypalplus_build_amount_details_after', array(
+            'quote' => $quote,
+            'details' => $details
+        ));
+
         $amount = new Amount();
         $amount->setCurrency($quote->getBaseCurrencyCode())
             ->setDetails($details)
